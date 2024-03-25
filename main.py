@@ -16,14 +16,14 @@ class Wiki(BaseModel):
 async def root():
     """Home Page with GET HTTP Method"""
 
-    return {"message": "Hello FastAPI"}
+    return {"message": "Hello modded FastAPI"}
 
 
 @app.get("/fruit")
 async def fruit():
     """Use a library to get a random fruit"""
 
-    return {"fruit": get_fruit()}
+    return {"A random fruit": get_fruit()}
 
 
 @app.post("/search")
